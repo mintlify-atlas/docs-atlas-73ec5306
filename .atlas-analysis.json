@@ -1,0 +1,174 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Protocol Buffers",
+  "projectDescription": "Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data, with runtimes for C++, Java, Python, C#, Go, Ruby, PHP, Objective-C, and more.",
+  "theme": "linden",
+  "primaryColor": "#d85030",
+  "lightColor": "#2c3538",
+  "darkColor": "#d1c2c1",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/protoc",
+              "installation/cpp",
+              "installation/java",
+              "installation/python",
+              "installation/csharp",
+              "installation/go",
+              "installation/ruby",
+              "installation/php",
+              "installation/objectivec"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "tutorials/overview",
+              "tutorials/cpp",
+              "tutorials/java",
+              "tutorials/python",
+              "tutorials/go"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Language Guide",
+        "groups": [
+          {
+            "group": "Proto Syntax",
+            "pages": [
+              "language-guide/proto3",
+              "language-guide/proto2",
+              "language-guide/editions"
+            ]
+          },
+          {
+            "group": "Language Runtimes",
+            "pages": [
+              "language-guide/cpp-generated",
+              "language-guide/java-generated",
+              "language-guide/python-generated",
+              "language-guide/csharp-generated",
+              "language-guide/go-generated",
+              "language-guide/ruby-generated",
+              "language-guide/php-generated",
+              "language-guide/objectivec-generated"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "language-guide/field-presence",
+              "language-guide/extension",
+              "language-guide/options",
+              "language-guide/encoding"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "API Reference",
+            "pages": [
+              "reference/overview",
+              "reference/cpp",
+              "reference/java",
+              "reference/python",
+              "reference/csharp"
+            ]
+          },
+          {
+            "group": "Well-Known Types",
+            "pages": [
+              "reference/well-known-types"
+            ]
+          },
+          {
+            "group": "Protocol Compiler",
+            "pages": [
+              "reference/protoc",
+              "reference/protoc-plugins"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Best Practices",
+            "pages": [
+              "guides/style-guide",
+              "guides/best-practices",
+              "guides/dos-and-donts"
+            ]
+          },
+          {
+            "group": "Serialization",
+            "pages": [
+              "guides/encoding",
+              "guides/json-mapping",
+              "guides/text-format"
+            ]
+          },
+          {
+            "group": "Migration",
+            "pages": [
+              "guides/proto2-to-proto3",
+              "guides/api-versioning"
+            ]
+          },
+          {
+            "group": "Build Systems",
+            "pages": [
+              "guides/bazel",
+              "guides/cmake",
+              "guides/maven"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Language-neutral serialization format: define data structures once, generate code for any supported language",
+    "Multi-language runtime support: C++, Java, Python, C#, Go, Ruby, PHP, Objective-C, Rust",
+    "Protocol compiler (protoc) generates efficient serialization/deserialization code",
+    "Backward and forward compatible schema evolution",
+    "Compact binary wire format for efficient network transmission",
+    "Proto2 and proto3 syntax with optional field presence tracking",
+    "Well-Known Types for common data structures (Timestamp, Duration, Any, Struct)",
+    "JSON and TextFormat representations alongside binary format",
+    "Arena allocation in C++ for high-performance memory management",
+    "Editions system for fine-grained feature control across schema versions"
+  ],
+  "publicApiSurface": [
+    "message: base type for all protobuf messages",
+    "MessageLite: lightweight message base for mobile/embedded",
+    "Descriptor / FileDescriptor: runtime schema reflection",
+    "DynamicMessage: schema-driven messages without code generation",
+    "TextFormat: human-readable serialization/deserialization",
+    "JsonFormat (Java/C#): JSON serialization for protobuf messages",
+    "protoc --cpp_out / --java_out / --python_out / --csharp_out / --go_out / --ruby_out / --php_out",
+    "google.protobuf.Any: encapsulate arbitrary protobuf messages",
+    "google.protobuf.Timestamp / Duration / Struct / Value / FieldMask",
+    "RepeatedField<T> / RepeatedPtrField<T>: repeated field containers (C++)",
+    "Arena: memory arena for C++ message allocation",
+    "MessageFactory / DynamicMessageFactory: programmatic message construction"
+  ]
+}
